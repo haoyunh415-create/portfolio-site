@@ -99,6 +99,8 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 5vw; }
 .proj-name { font-family: var(--serif); font-weight: 700; font-size: 1.4rem; }
 .proj-name .sub { font-size: .55em; color: var(--ink-faint); font-weight: 400; letter-spacing: .04em; }
 .proj-oneliner { color: var(--ink-dim); font-size: 1rem; margin-bottom: 16px; }
+.proj-role { color: var(--ink-faint); font-size: 13px; letter-spacing: .05em; margin: -8px 0 16px; }
+.proj-role em { color: var(--accent); font-style: normal; }
 
 .proj-sec { margin-bottom: 12px; }
 .proj-sec:last-child { margin-bottom: 0; }

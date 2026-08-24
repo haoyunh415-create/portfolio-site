@@ -248,6 +248,36 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 5vw; }
 .sk-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag { color: var(--ink-dim); border-bottom: 1px solid var(--line); padding: 2px 2px 4px; font-size: .9rem; }
 
+/* 简历预览 */
+.resume-actions { display: flex; gap: 12px; margin-bottom: 18px; flex-wrap: wrap; }
+.resume-actions .btn {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-decoration: none;
+  border: 1px solid var(--accent-soft);
+  padding: 8px 18px;
+  border-radius: 2px;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.resume-actions .btn:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+.resume-frame {
+  border: 1px solid var(--line);
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 760px;
+  margin: 0 auto;
+  box-shadow: 0 12px 44px rgba(0, 0, 0, .45);
+}
+.resume-frame iframe {
+  display: block;
+  width: 100%;
+  height: 1100px;
+  border: 0;
+}
+
 /* 联系 */
 .contact { display: flex; flex-wrap: wrap; gap: 10px 30px; }
 .contact .link { font-size: .95rem; }
@@ -269,4 +299,5 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 5vw; }
   .proj-card { padding: 20px 18px; }
   .skill-group { grid-template-columns: 1fr; gap: 4px; }
   .shot { width: 240px; }
+  .resume-frame iframe { height: 640px; }
 }

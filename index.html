@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="黄浩云的项目档案：鉴来助手（Chrome/Edge 双商店 AI 产品）、GraphMind（Graph RAG 知识平台）、AI Interview Agent（Multi-Agent 面试训练）、Django 全栈项目。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄浩云 · 项目档案 — 四个 AI 项目，从检索到智能体再到上架产品">
+<meta property="og:description" content="鉴来助手（Chrome/Edge 双商店 AI 产品）· GraphMind（Graph RAG）· AI Interview Agent（Multi-Agent）· Django 全栈。">
+<meta property="og:image" content="https://me.jianla.xyz/assets/shots/shot-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>黄浩云 · 项目档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <span class="mono no">黄浩云 / HHY — 项目档案</span>
+  <a class="mono head-link" href="assets/黄浩云简历.pdf" download>简历 PDF ↓</a>
+</header>
+
+<main>
+
+  <!-- ① HERO -->
+  <section class="hero">
+    <p class="mono kicker">AI 产品 · Graph RAG · Multi-Agent · 全栈</p>
+    <h1 class="hero-title">四个 AI 项目，从检索到智能体，再到上架产品。</h1>
+    <p class="hero-sub">鉴来助手 · GraphMind · AI Interview Agent · Django 全栈。下表一眼看全，下方逐项目详解。</p>
+    <div class="hero-meta mono">
+      <span>黄浩云</span><i>·</i><span>岭南师范学院 · 人工智能</span><i>·</i><span>2023–2027</span><i>·</i><span>GPA 3.4 / 前 10%</span>
+    </div>
+  </section>
+
+  <!-- ② 项目速览 -->
+  <section class="block" id="overview">
+    <div class="block-head">
+      <span class="mono no">01 — 速览</span>
+      <h2 class="block-title">项目一览</h2>
+    </div>
+    <table class="overview">
+      <thead>
+        <tr><th>项目</th><th>一句话</th><th>源码</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">鉴来助手 <span class="status status-live">已上线</span></td>
+          <td class="desc">双商店上架的 AI 浏览器扩展，超长文本的渐进式摘要与伏笔雷达</td>
+          <td><a href="https://github.com/haoyunh415-create/novel-copilot-backend">GitHub ↗</a></td>
+        </tr>
+        <tr>
+          <td class="name">GraphMind <span class="status status-demo">可运行</span></td>
+          <td class="desc">Graph RAG 知识平台，向量 + BM25 + 图谱三路检索</td>
+          <td><a href="https://github.com/haoyunh415-create/rag-GraphMind">GitHub ↗</a></td>
+        </tr>
+        <tr>
+          <td class="name">AI Interview Agent <span class="status status-demo">可运行</span></td>
+          <td class="desc">Multi-Agent 面试训练，四角色协同 + 流式交互</td>
+          <td><a href="https://github.com/haoyunh415-create/AI-Interview-Agent">GitHub ↗</a></td>
+        </tr>
+        <tr>
+          <td class="name">Django-Project <span class="status status-practice">练习</span></td>
+          <td class="desc">Django 多 app 企业门户，容器化部署</td>
+          <td><a href="https://github.com/haoyunh415-create/Django-Project">GitHub ↗</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ③ 项目详解 -->
+  <section class="block" id="projects">
+    <div class="block-head">
+      <span class="mono no">02 — 详解</span>
+      <h2 class="block-title">项目详解</h2>
+    </div>
+
+    <!-- 鉴来助手 -->
+    <article class="proj-card">
+      <div class="proj-card-head">
+        <span class="proj-num">01</span>
+        <h3 class="proj-name">鉴来助手 <span class="mono sub">小说 AI 伏笔雷达</span></h3>
+      </div>
+      <p class="proj-oneliner">已上线 Chrome + Edge 双商店的浏览器扩展。独立完成平台过审、合规备案与渠道分发。完整决策链见下文「旗舰复盘」。</p>
+      <div class="proj-sec">
+        <h4>背景</h4>
+        <p>网文连载动辄数百章，读者跨越数月追更，早期伏笔与人物关系在记忆中早已断裂——这是超长文本的结构性问题，与长会议纪要、知识库检索同源。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>技术方案</h4>
+        <p>Chromium 扩展采集阅读上下文，后端 FastAPI 提供 AI 分析。核心采用<strong>渐进式摘要</strong>而非一次性纯 RAG：把数百章分层压缩为可检索的结构化记忆，再按需回看原文，规避超长文本的检索漂移与上下文成本。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>关键实现</h4>
+        <p>伏笔雷达做跨章呼应识别；人物关系图谱维护角色网络；划词查询与侧边阅读降低使用门槛。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>工程与合规</h4>
+        <p><code>host_permissions</code> 收窄至单域名通过 Chrome 审核；ICP 备案；Let's Encrypt SSL + Nginx 反代 + systemd；为国内用户提供免梯 zip 与油猴脚本版。</p>
+      </div>
+      <div class="proj-tags"><span>FastAPI</span><span>JavaScript</span><span>Nginx</span><span>Cloudflare Pages</span><span>Let's Encrypt</span></div>
+      <div class="shots">
+        <div class="shots-head">产品界面</div>
+        <div class="shots-row">
+          <figure class="shot">
+            <img src="assets/shots/shot-1.jpg" alt="鉴来助手「标准概况」界面" loading="lazy" width="300" height="189">
+            <figcaption>标准概况</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/shot-2.jpg" alt="鉴来助手「伏笔总览」界面" loading="lazy" width="300" height="191">
+            <figcaption>伏笔总览</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/shot-3.jpg" alt="鉴来助手「周报」界面" loading="lazy" width="300" height="185">
+            <figcaption>周报</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/shot-4.jpg" alt="鉴来助手「人物关系图」界面" loading="lazy" width="300" height="191">
+            <figcaption>人物关系图</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="proj-src"><a href="https://github.com/haoyunh415-create/novel-copilot-backend">查看源码 ↗</a></div>
+    </article>
+
+    <!-- GraphMind -->
+    <article class="proj-card">
+      <div class="proj-card-head">
+        <span class="proj-num">02</span>
+        <h3 class="proj-name">GraphMind <span class="mono sub">Graph RAG 知识检索与推理平台</span></h3>
+      </div>
+      <p class="proj-oneliner">工程化 Graph RAG 平台：文档上传、异步入库、知识检索与智能问答。</p>
+      <div class="proj-sec">
+        <h4>背景</h4>
+        <p>纯向量检索难以回答「跨文档的实体关系与多跳推理」类问题，需要引入知识图谱补足。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>技术方案</h4>
+        <p>构建 <strong>Hybrid Retrieval</strong> 检索链路，融合向量检索、BM25 检索与图谱检索，通过 RRF 与 Reranker 提升召回质量；基于 Neo4j 构建知识图谱，实现实体关系建模与多跳推理。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>关键实现</h4>
+        <p>文档上传后异步入库（解析 → 分块 → 向量化 → 实体抽取 → 图谱写入）；构建全链路 Trace 与自动化 Eval，实现 Agent / RAG 执行过程可观测化与检索质量评估。</p>
+      </div>
+      <div class="proj-tags"><span>FastAPI</span><span>Next.js</span><span>Neo4j</span><span>Redis</span><span>Milvus</span><span>OpenTelemetry</span></div>
+      <div class="proj-src"><a href="https://github.com/haoyunh415-create/rag-GraphMind">查看源码 ↗</a></div>
+    </article>
+
+    <!-- AI Interview Agent -->
+    <article class="proj-card">
+      <div class="proj-card-head">
+        <span class="proj-num">03</span>
+        <h3 class="proj-name">AI Interview Agent <span class="mono sub">Multi-Agent 面试训练平台</span></h3>
+      </div>
+      <p class="proj-oneliner">多智能体协同的面试训练系统：简历解析、模拟面试、自动评分、报告生成全流程自动化。</p>
+      <div class="proj-sec">
+        <h4>背景</h4>
+        <p>模拟面试需要多角色配合——理解简历、提问、评分、写报告——单一模型难以兼顾，因此拆分为多智能体分工。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>技术方案</h4>
+        <p>设计 <strong>Resume Analyst / Interviewer / Evaluator / Report Writer</strong> 多 Agent 协同；实现 Orchestrator（调度）、Shared Memory（上下文共享）与 Message Bus（事件驱动通信）。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>关键实现</h4>
+        <p>基于 SSE 流式交互；Telemetry + 缓存 + 限流提升性能与可观测性；JWT 鉴权 + SQLite 持久化。</p>
+      </div>
+      <div class="proj-tags"><span>FastAPI</span><span>React</span><span>SQLite</span><span>JWT</span><span>SSE</span><span>Multi-Agent</span></div>
+      <div class="proj-src"><a href="https://github.com/haoyunh415-create/AI-Interview-Agent">查看源码 ↗</a></div>
+    </article>
+
+    <!-- Django-Project -->
+    <article class="proj-card">
+      <div class="proj-card-head">
+        <span class="proj-num">04</span>
+        <h3 class="proj-name">Django-Project <span class="mono sub">多 app 企业门户</span></h3>
+      </div>
+      <p class="proj-oneliner">Django 全栈项目：多应用模块化结构，容器化部署。</p>
+      <div class="proj-sec">
+        <h4>背景</h4>
+        <p>以企业门户为题材，练习 Django 的多应用工程组织与部署流程。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>技术方案</h4>
+        <p>按业务域拆分为 <code>accounts</code> / <code>company</code> / <code>recruitment</code> / <code>news</code> / <code>products</code> / <code>team</code> 等独立 app；提供 Dockerfile 与 docker-compose 容器化部署。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>关键实现</h4>
+        <p>模板渲染、用户账号、内容管理（新闻/产品）与招聘信息展示等基础能力。</p>
+      </div>
+      <div class="proj-tags"><span>Django</span><span>Python</span><span>Docker</span></div>
+      <div class="proj-src"><a href="https://github.com/haoyunh415-create/Django-Project">查看源码 ↗</a></div>
+    </article>
+  </section>
+
+  <!-- ④ 旗舰复盘 -->
+  <section class="block" id="flagship">
+    <div class="block-head">
+      <span class="mono no">03 — 旗舰复盘</span>
+      <h2 class="block-title">鉴来助手 <span class="mono sub">从 0 到双商店的 7 个决策</span></h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl-node">
+        <span class="tl-dot"></span>
+        <div class="tl-head"><span class="tl-index">01</span><span class="tl-title">需求洞察</span><span class="tl-verdict">长篇阅读的记忆断层是真实痛点</span></div>
+        <p>网文连载数百章、追更数月，早期伏笔与人物关系在记忆中早已断裂。</p>
+      </li>
+      <li class="tl-node">
+        <span class="tl-dot"></span>
+        <div class="tl-head"><span class="tl-index">02</span><span class="tl-title">技术方案</span><span class="tl-verdict">渐进式摘要，而非一次性纯 RAG</span></div>
+        <p>分层压缩为可检索的结构化记忆，按需回看原文，规避检索漂移与上下文成本。伏笔雷达在此基础上做跨章呼应识别。</p>
+      </li>
+      <li class="tl-node">
+        <span class="tl-dot"></span>
+        <div class="tl-head"><span class="tl-index">03</span><span class="tl-title">Chrome 过审</span><span class="tl-verdict">权限收窄：从通配符到单域名</span></div>
+        <p>把 <code>host_permissions</code> 从通配符收窄到单域名，逐条填写权限用途。「功能覆盖」与「审核风险」的权衡——收敛权限换取过审与信任。</p>
+      </li>
+      <li class="tl-node">
+        <span class="tl-dot"></span>
+        <div class="tl-head"><span class="tl-index">04</span><span class="tl-title">合规与基建</span><span class="tl-verdict">ICP 备案 + 自建服务器</span></div>
+        <p>ICP 备案；阿里云 + Let's Encrypt SSL + Nginx 反代 + systemd。选自建而非 Serverless：核心推理是长任务，需要更细的资源控制。</p>
+        <p class="note">当前：<code>https://jianla.xyz</code> 在线，Nginx 1.18，证书有效期至 2026-09-30。</p>
+      </li>
+      <li class="tl-node">
+        <span class="tl-dot"></span>
+        <div class="tl-head"><span class="tl-index">05</span><span class="tl-title">分发渠道设计</span><span class="tl-verdict">国内用户装不了 Chrome 商店，所以必须绕</span></div>
+        <p>多数国内用户无法访问 Chrome 商店。因此额外提供免梯 zip + 油猴脚本版（覆盖 Via / Alook）。渠道是从用户真实约束倒推的必选项。</p>
+      </li>
+      <li class="tl-node">
+        <span class="tl-dot"></span>
+        <div class="tl-head"><span class="tl-index">06</span><span class="tl-title">商业化调研</span><span class="tl-verdict">第一道门槛不是技术，是营业执照</span></div>
+        <p>蓝兔支付已停止新签约；微信商户号要求企业/个体户主体。<strong>个人开发者做付费产品的第一道门槛是资质，不是代码。</strong>调研结论，尚未办理。</p>
+      </li>
+      <li class="tl-node">
+        <span class="tl-dot"></span>
+        <div class="tl-head"><span class="tl-index">07</span><span class="tl-title">增长受阻</span><span class="tl-verdict">个位数用户，正在诊断为什么</span></div>
+        <p>产品上线后用户量停留在个位数。正在对目标用户做访谈，定位真实阻力。</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ⑤ 技能 -->
+  <section class="block" id="skills">
+    <div class="block-head">
+      <span class="mono no">04 — 技能</span>
+      <h2 class="block-title">技能</h2>
+    </div>
+    <div class="skills">
+      <div class="skill-group"><span class="mono sk-label">语言</span><div class="sk-tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">后端</span><div class="sk-tags"><span class="tag">FastAPI</span><span class="tag">Django</span><span class="tag">RESTful API</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">AI</span><div class="sk-tags"><span class="tag">RAG</span><span class="tag">Graph RAG</span><span class="tag">Agent Workflow</span><span class="tag">Multi-Agent</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">存储</span><div class="sk-tags"><span class="tag">SQLite</span><span class="tag">Redis</span><span class="tag">Neo4j</span><span class="tag">Milvus</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">工具</span><div class="sk-tags"><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Cursor</span><span class="tag">Claude Code</span><span class="tag">Codex</span></div></div>
+    </div>
+  </section>
+
+  <!-- ⑥ 联系 -->
+  <section class="block" id="contact">
+    <div class="block-head">
+      <span class="mono no">05 — 联系</span>
+      <h2 class="block-title">期待交流</h2>
+    </div>
+    <div class="contact mono">
+      <a class="link" href="mailto:2313370765@qq.com">2313370765@qq.com</a>
+      <a class="link" href="tel:18826604241">188 2660 4241</a>
+      <a class="link" href="https://github.com/haoyunh415-create">github.com/haoyunh415-create</a>
+      <a class="link" href="https://novel-copilot-backend.pages.dev">鉴来助手 产品页 ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot mono">
+  <span>© 2026 黄浩云</span>
+  <span>建档于 2026-08-23</span>
+</footer>
+
+</body>
+</html>

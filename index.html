@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="黄浩云的项目档案：鉴来助手（Chrome/Edge 双商店 AI 产品）、GraphMind（Graph RAG 知识平台）、AI Interview Agent（Multi-Agent 面试训练）、Django 全栈项目。">
+<meta name="description" content="黄浩云 · AI Agent / LLM 应用求职作品集：鉴来助手（Chrome/Edge 双商店 AI 产品）、GraphMind（GraphRAG 知识平台）、AI Interview Agent（Multi-Agent 面试训练）。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="黄浩云 · 项目档案 — 四个 AI 项目，从检索到智能体再到上架产品">
-<meta property="og:description" content="鉴来助手（Chrome/Edge 双商店 AI 产品）· GraphMind（Graph RAG）· AI Interview Agent（Multi-Agent）· Django 全栈。">
+<meta property="og:title" content="黄浩云 · AI Agent 求职作品集 — 独立把 AI 产品从 0 推到上线">
+<meta property="og:description" content="鉴来助手（Chrome/Edge 双商店）· GraphMind（GraphRAG）· AI Interview Agent（Multi-Agent）。">
 <meta property="og:image" content="https://me.jianla.xyz/assets/shots/shot-1.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<title>黄浩云 · 项目档案</title>
+<title>黄浩云 · AI Agent 求职作品集</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,19 +18,24 @@
 <body>
 
 <header class="site-head">
-  <span class="mono no">黄浩云 / HHY — 项目档案</span>
+  <span class="mono no">黄浩云 / HHY — AI Agent 作品集</span>
   <a class="mono head-link" href="assets/黄浩云简历.pdf" download>简历 PDF ↓</a>
 </header>
 
 <main>
 
-  <!-- ① HERO -->
+  <!-- ① HERO · 求职定位 -->
   <section class="hero">
-    <p class="mono kicker">AI 产品 · Graph RAG · Multi-Agent · 全栈</p>
-    <h1 class="hero-title">四个 AI 项目，从检索到智能体，再到上架产品。</h1>
-    <p class="hero-sub">鉴来助手 · GraphMind · AI Interview Agent · Django 全栈。下表一眼看全，下方逐项目详解。</p>
+    <p class="mono kicker">LLM Application · RAG · GraphRAG · Multi-Agent</p>
+    <h1 class="hero-title">独立把一个 AI 产品从零推到双商店上线。</h1>
+    <p class="hero-sub">鉴来助手、GraphMind、AI Interview Agent 三个项目，覆盖检索增强、知识图谱与多智能体协同。下表一眼看全，下方逐项目详解与架构。</p>
     <div class="hero-meta mono">
       <span>黄浩云</span><i>·</i><span>岭南师范学院 · 人工智能</span><i>·</i><span>2023–2027</span>
+    </div>
+    <div class="hero-chips mono">
+      <span class="chip">Chrome + Edge 双商店</span>
+      <span class="chip">独立上线</span>
+      <span class="chip">ICP 备案</span>
     </div>
   </section>
 
@@ -52,7 +57,7 @@
         </tr>
         <tr>
           <td class="name">GraphMind <span class="status status-demo">可运行</span></td>
-          <td class="desc">Graph RAG 知识平台，向量 + BM25 + 图谱三路检索</td>
+          <td class="desc">GraphRAG 知识平台，向量 + BM25 + 图谱三路混合检索</td>
           <td><a href="https://github.com/haoyunh415-create/rag-GraphMind">GitHub ↗</a></td>
         </tr>
         <tr>
@@ -61,8 +66,8 @@
           <td><a href="https://github.com/haoyunh415-create/AI-Interview-Agent">GitHub ↗</a></td>
         </tr>
         <tr>
-          <td class="name">Django-Project <span class="status status-practice">练习</span></td>
-          <td class="desc">Django 多 app 企业门户，容器化部署</td>
+          <td class="name">其他实践 <span class="status status-practice">练习</span></td>
+          <td class="desc">Django-Project · 多 app 企业门户，容器化部署</td>
           <td><a href="https://github.com/haoyunh415-create/Django-Project">GitHub ↗</a></td>
         </tr>
       </tbody>
@@ -100,7 +105,61 @@
         <h4>工程与合规</h4>
         <p><code>host_permissions</code> 收窄至单域名通过 Chrome 审核；ICP 备案；Let's Encrypt SSL + Nginx 反代 + systemd；为国内用户提供免梯 zip 与油猴脚本版。</p>
       </div>
-      <div class="proj-tags"><span>FastAPI</span><span>JavaScript</span><span>Nginx</span><span>Cloudflare Pages</span><span>Let's Encrypt</span></div>
+      <div class="proj-tags"><span>FastAPI</span><span>JavaScript</span><span>SSE</span><span>SQLite</span><span>Nginx</span></div>
+
+      <!-- 架构图：Structured Memory -->
+      <figure class="arch">
+        <div class="arch-head">结构化记忆 · 渐进式摘要</div>
+        <div class="arch-wrap">
+          <svg class="arch-svg" viewBox="0 0 760 500" role="img" aria-label="结构化记忆渐进式摘要架构">
+            <rect class="arch-box" x="210" y="20" width="340" height="54" rx="4"/>
+            <text class="arch-main" x="380" y="52" text-anchor="middle">输入：数百章连载原文</text>
+            <line class="arch-arrow" x1="380" y1="74" x2="380" y2="112"/>
+            <polygon class="arch-arrowhead" points="376,104 380,114 384,104"/>
+
+            <rect class="arch-box arch-box-accent" x="240" y="114" width="280" height="50" rx="4"/>
+            <text class="arch-main" x="380" y="145" text-anchor="middle">按章结构化蒸馏</text>
+            <line class="arch-arrow" x1="380" y1="164" x2="380" y2="186"/>
+            <line class="arch-arrow" x1="170" y1="186" x2="590" y2="186"/>
+            <line class="arch-arrow" x1="170" y1="186" x2="170" y2="204"/>
+            <line class="arch-arrow" x1="380" y1="186" x2="380" y2="204"/>
+            <line class="arch-arrow" x1="590" y1="186" x2="590" y2="204"/>
+            <polygon class="arch-arrowhead" points="166,196 170,206 174,196"/>
+            <polygon class="arch-arrowhead" points="376,196 380,206 384,196"/>
+            <polygon class="arch-arrowhead" points="586,196 590,206 594,196"/>
+
+            <rect class="arch-box" x="90" y="206" width="160" height="46" rx="4"/>
+            <text class="arch-main" x="170" y="234" text-anchor="middle">人物</text>
+            <rect class="arch-box" x="300" y="206" width="160" height="46" rx="4"/>
+            <text class="arch-main" x="380" y="234" text-anchor="middle">伏笔</text>
+            <rect class="arch-box" x="510" y="206" width="160" height="46" rx="4"/>
+            <text class="arch-main" x="590" y="234" text-anchor="middle">术语</text>
+
+            <line class="arch-arrow" x1="170" y1="252" x2="170" y2="278"/>
+            <line class="arch-arrow" x1="590" y1="252" x2="590" y2="278"/>
+            <line class="arch-arrow" x1="170" y1="278" x2="590" y2="278"/>
+            <line class="arch-arrow" x1="380" y1="278" x2="380" y2="296"/>
+            <polygon class="arch-arrowhead" points="376,288 380,298 384,288"/>
+
+            <rect class="arch-box arch-box-accent" x="230" y="298" width="300" height="60" rx="4"/>
+            <text class="arch-main" x="380" y="324" text-anchor="middle">分级汇总</text>
+            <text class="arch-sub" x="380" y="344" text-anchor="middle">60 章分批 → 阶段总结 → 全书汇总</text>
+            <line class="arch-arrow" x1="380" y1="358" x2="380" y2="396"/>
+            <polygon class="arch-arrowhead" points="376,388 380,398 384,388"/>
+
+            <rect class="arch-box arch-box-accent" x="230" y="398" width="300" height="50" rx="4"/>
+            <text class="arch-main" x="380" y="429" text-anchor="middle">结构化记忆（可检索）</text>
+
+            <path class="arch-arrow arch-dashed" d="M230,423 L70,423 L70,47 L206,47"/>
+            <polygon class="arch-arrowhead" points="198,43 206,47 198,51"/>
+            <text class="arch-sub" x="70" y="224" text-anchor="middle">按需</text>
+            <text class="arch-sub" x="70" y="242" text-anchor="middle">回看</text>
+            <text class="arch-sub" x="70" y="260" text-anchor="middle">原文</text>
+          </svg>
+        </div>
+        <figcaption class="arch-cap">数百章原文经「按章蒸馏 → 分级汇总」压缩为可检索记忆，查询时按需回看原文——规避一次性长上下文的高成本与检索漂移。</figcaption>
+      </figure>
+
       <div class="shots">
         <div class="shots-head">产品界面</div>
         <div class="shots-row">
@@ -129,9 +188,9 @@
     <article class="proj-card">
       <div class="proj-card-head">
         <span class="proj-num">02</span>
-        <h3 class="proj-name">GraphMind <span class="mono sub">Graph RAG 知识检索与推理平台</span></h3>
+        <h3 class="proj-name">GraphMind <span class="mono sub">GraphRAG 知识检索与推理平台</span></h3>
       </div>
-      <p class="proj-oneliner">工程化 Graph RAG 平台：文档上传、异步入库、知识检索与智能问答。</p>
+      <p class="proj-oneliner">工程化 GraphRAG 平台：文档上传、异步入库、知识检索与智能问答。</p>
       <p class="proj-role mono">角色 · <em>独立完成</em></p>
       <div class="proj-sec">
         <h4>背景</h4>
@@ -139,13 +198,63 @@
       </div>
       <div class="proj-sec">
         <h4>技术方案</h4>
-        <p>构建 <strong>Hybrid Retrieval</strong> 检索链路，融合向量检索、BM25 检索与图谱检索，通过 RRF 与 Reranker 提升召回质量；基于 Neo4j 构建知识图谱，实现实体关系建模与多跳推理。</p>
+        <p>构建<strong>混合检索</strong>链路，融合向量（Milvus）、BM25 关键词（Elasticsearch）与知识图谱（Neo4j）三类检索，经倒数排名融合（RRF）与重排序（Reranker）提升召回质量。</p>
       </div>
       <div class="proj-sec">
         <h4>关键实现</h4>
-        <p>文档上传后异步入库（解析 → 分块 → 向量化 → 实体抽取 → 图谱写入）；构建全链路 Trace 与自动化 Eval，实现 Agent / RAG 执行过程可观测化与检索质量评估。</p>
+        <p>文档上传后异步入库（解析 → 分块 → 向量化 → 实体抽取 → 图谱写入）；构建全链路 Trace 与自动化 Eval，实现检索过程可观测化与检索质量评估。</p>
       </div>
-      <div class="proj-tags"><span>FastAPI</span><span>Next.js</span><span>Neo4j</span><span>Redis</span><span>Milvus</span><span>OpenTelemetry</span></div>
+      <div class="proj-tags"><span>FastAPI</span><span>Next.js</span><span>Neo4j</span><span>Redis</span><span>Milvus</span><span>Elasticsearch</span><span>OpenTelemetry</span></div>
+
+      <!-- 架构图：Hybrid Retrieval -->
+      <figure class="arch">
+        <div class="arch-head">混合检索 · 三路融合 + 重排序</div>
+        <div class="arch-wrap">
+          <svg class="arch-svg" viewBox="0 0 760 480" role="img" aria-label="混合检索三路融合架构">
+            <rect class="arch-box arch-box-accent" x="310" y="20" width="140" height="44" rx="4"/>
+            <text class="arch-main" x="380" y="48" text-anchor="middle">Query 查询</text>
+
+            <line class="arch-arrow" x1="380" y1="64" x2="380" y2="90"/>
+            <line class="arch-arrow" x1="150" y1="90" x2="610" y2="90"/>
+            <line class="arch-arrow" x1="150" y1="90" x2="150" y2="112"/>
+            <line class="arch-arrow" x1="380" y1="90" x2="380" y2="112"/>
+            <line class="arch-arrow" x1="610" y1="90" x2="610" y2="112"/>
+            <polygon class="arch-arrowhead" points="146,104 150,114 154,104"/>
+            <polygon class="arch-arrowhead" points="376,104 380,114 384,104"/>
+            <polygon class="arch-arrowhead" points="606,104 610,114 614,104"/>
+
+            <rect class="arch-box" x="60" y="114" width="180" height="60" rx="4"/>
+            <text class="arch-main" x="150" y="140" text-anchor="middle">向量检索</text>
+            <text class="arch-sub" x="150" y="160" text-anchor="middle">Milvus</text>
+            <rect class="arch-box" x="290" y="114" width="180" height="60" rx="4"/>
+            <text class="arch-main" x="380" y="140" text-anchor="middle">BM25 关键词</text>
+            <text class="arch-sub" x="380" y="160" text-anchor="middle">Elasticsearch</text>
+            <rect class="arch-box" x="520" y="114" width="180" height="60" rx="4"/>
+            <text class="arch-main" x="610" y="140" text-anchor="middle">图谱检索</text>
+            <text class="arch-sub" x="610" y="160" text-anchor="middle">Neo4j</text>
+
+            <line class="arch-arrow" x1="150" y1="174" x2="150" y2="206"/>
+            <line class="arch-arrow" x1="610" y1="174" x2="610" y2="206"/>
+            <line class="arch-arrow" x1="150" y1="206" x2="610" y2="206"/>
+            <line class="arch-arrow" x1="380" y1="206" x2="380" y2="228"/>
+            <polygon class="arch-arrowhead" points="376,220 380,230 384,220"/>
+
+            <rect class="arch-box arch-box-accent" x="270" y="230" width="220" height="52" rx="4"/>
+            <text class="arch-main" x="380" y="262" text-anchor="middle">倒数排名融合（RRF）</text>
+            <line class="arch-arrow" x1="380" y1="282" x2="380" y2="320"/>
+            <polygon class="arch-arrowhead" points="376,312 380,322 384,312"/>
+
+            <rect class="arch-box" x="270" y="322" width="220" height="52" rx="4"/>
+            <text class="arch-main" x="380" y="354" text-anchor="middle">重排序（Reranker）</text>
+            <line class="arch-arrow" x1="380" y1="374" x2="380" y2="412"/>
+            <polygon class="arch-arrowhead" points="376,404 380,414 384,404"/>
+
+            <rect class="arch-box arch-box-accent" x="310" y="414" width="140" height="44" rx="4"/>
+            <text class="arch-main" x="380" y="442" text-anchor="middle">最终结果</text>
+          </svg>
+        </div>
+        <figcaption class="arch-cap">查询并行走向量、BM25、图谱三路，结果经 RRF 融合去重、再经 Reranker 重排——用多路互补覆盖单路检索的召回盲区。</figcaption>
+      </figure>
       <div class="proj-src"><a href="https://github.com/haoyunh415-create/rag-GraphMind">查看源码 ↗</a></div>
     </article>
 
@@ -163,38 +272,78 @@
       </div>
       <div class="proj-sec">
         <h4>技术方案</h4>
-        <p>设计 <strong>Resume Analyst / Interviewer / Evaluator / Report Writer</strong> 多 Agent 协同；实现 Orchestrator（调度）、Shared Memory（上下文共享）与 Message Bus（事件驱动通信）。</p>
+        <p>设计<strong>四个专业 Agent</strong>——简历解析、面试官、评分、报告生成，由 Orchestrator（调度）统一编排，通过 Shared Memory（共享记忆）与 Message Bus（消息总线）实现上下文共享与事件驱动协作。</p>
       </div>
       <div class="proj-sec">
         <h4>关键实现</h4>
-        <p>基于 SSE 流式交互；Telemetry + 缓存 + 限流提升性能与可观测性；JWT 鉴权 + SQLite 持久化。</p>
+        <p>基于 SSE 流式交互；缓存 + 限流 + 监控提升实时体验与可观测性；JWT 鉴权 + SQLite 持久化。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>工程判断 · Agent ≠ LLM 调用，工具 ≠ Agent</h4>
+        <p>知识检索（Knowledge Retriever）被设计为<strong>确定性检索模块</strong>，由 Agent 作为工具调用，而不是第 5 个 Agent——把「有自主决策的 Agent」与「被调用的检索工具」分开，避免无谓的编排复杂度。</p>
       </div>
       <div class="proj-tags"><span>FastAPI</span><span>React</span><span>SQLite</span><span>JWT</span><span>SSE</span><span>Multi-Agent</span></div>
-      <div class="proj-src"><a href="https://github.com/haoyunh415-create/AI-Interview-Agent">查看源码 ↗</a></div>
-    </article>
 
-    <!-- Django-Project -->
-    <article class="proj-card">
-      <div class="proj-card-head">
-        <span class="proj-num">04</span>
-        <h3 class="proj-name">Django-Project <span class="mono sub">多 app 企业门户</span></h3>
-      </div>
-      <p class="proj-oneliner">Django 全栈项目：多应用模块化结构，容器化部署。</p>
-      <p class="proj-role mono">角色 · <em>独立完成</em></p>
-      <div class="proj-sec">
-        <h4>背景</h4>
-        <p>以企业门户为题材，练习 Django 的多应用工程组织与部署流程。</p>
-      </div>
-      <div class="proj-sec">
-        <h4>技术方案</h4>
-        <p>按业务域拆分为 <code>accounts</code> / <code>company</code> / <code>recruitment</code> / <code>news</code> / <code>products</code> / <code>team</code> 等独立 app；提供 Dockerfile 与 docker-compose 容器化部署。</p>
-      </div>
-      <div class="proj-sec">
-        <h4>关键实现</h4>
-        <p>模板渲染、用户账号、内容管理（新闻/产品）与招聘信息展示等基础能力。</p>
-      </div>
-      <div class="proj-tags"><span>Django</span><span>Python</span><span>Docker</span></div>
-      <div class="proj-src"><a href="https://github.com/haoyunh415-create/Django-Project">查看源码 ↗</a></div>
+      <!-- 架构图：4-Agent -->
+      <figure class="arch">
+        <div class="arch-head">四 Agent 协同 · 调度 + 共享记忆 + 消息总线</div>
+        <div class="arch-wrap">
+          <svg class="arch-svg" viewBox="0 0 760 480" role="img" aria-label="四个专业 Agent 协同架构">
+            <rect class="arch-box arch-box-accent" x="280" y="20" width="200" height="48" rx="4"/>
+            <text class="arch-main" x="380" y="50" text-anchor="middle">Orchestrator · 调度</text>
+
+            <line class="arch-arrow" x1="380" y1="68" x2="380" y2="104"/>
+            <line class="arch-arrow" x1="114" y1="104" x2="644" y2="104"/>
+            <line class="arch-arrow" x1="114" y1="104" x2="114" y2="126"/>
+            <line class="arch-arrow" x1="290" y1="104" x2="290" y2="126"/>
+            <line class="arch-arrow" x1="466" y1="104" x2="466" y2="126"/>
+            <line class="arch-arrow" x1="644" y1="104" x2="644" y2="126"/>
+            <polygon class="arch-arrowhead" points="110,118 114,128 118,118"/>
+            <polygon class="arch-arrowhead" points="286,118 290,128 294,118"/>
+            <polygon class="arch-arrowhead" points="462,118 466,128 470,118"/>
+            <polygon class="arch-arrowhead" points="640,118 644,128 648,118"/>
+
+            <rect class="arch-box" x="36" y="128" width="156" height="60" rx="4"/>
+            <text class="arch-main" x="114" y="154" text-anchor="middle">简历解析</text>
+            <text class="arch-sub" x="114" y="174" text-anchor="middle">Resume Analyst</text>
+            <rect class="arch-box" x="212" y="128" width="156" height="60" rx="4"/>
+            <text class="arch-main" x="290" y="154" text-anchor="middle">面试官</text>
+            <text class="arch-sub" x="290" y="174" text-anchor="middle">Interviewer</text>
+            <rect class="arch-box" x="388" y="128" width="156" height="60" rx="4"/>
+            <text class="arch-main" x="466" y="154" text-anchor="middle">评分</text>
+            <text class="arch-sub" x="466" y="174" text-anchor="middle">Evaluator</text>
+            <rect class="arch-box" x="564" y="128" width="160" height="60" rx="4"/>
+            <text class="arch-main" x="644" y="154" text-anchor="middle">报告生成</text>
+            <text class="arch-sub" x="644" y="174" text-anchor="middle">Report Writer</text>
+
+            <line class="arch-arrow" x1="114" y1="188" x2="114" y2="220"/>
+            <line class="arch-arrow" x1="290" y1="188" x2="290" y2="220"/>
+            <line class="arch-arrow" x1="466" y1="188" x2="466" y2="220"/>
+            <line class="arch-arrow" x1="644" y1="188" x2="644" y2="220"/>
+            <line class="arch-arrow" x1="114" y1="220" x2="644" y2="220"/>
+            <line class="arch-arrow" x1="255" y1="220" x2="255" y2="242"/>
+            <line class="arch-arrow" x1="505" y1="220" x2="505" y2="242"/>
+            <polygon class="arch-arrowhead" points="251,234 255,244 259,234"/>
+            <polygon class="arch-arrowhead" points="501,234 505,244 509,234"/>
+
+            <rect class="arch-box" x="150" y="244" width="210" height="52" rx="4"/>
+            <text class="arch-main" x="255" y="276" text-anchor="middle">共享记忆 · Shared Memory</text>
+            <rect class="arch-box" x="400" y="244" width="210" height="52" rx="4"/>
+            <text class="arch-main" x="505" y="276" text-anchor="middle">消息总线 · Message Bus</text>
+
+            <line class="arch-arrow arch-dashed" x1="380" y1="296" x2="380" y2="350"/>
+            <polygon class="arch-arrowhead" points="376,342 380,352 384,342"/>
+
+            <rect class="arch-box arch-box-ghost" x="150" y="352" width="460" height="58" rx="4"/>
+            <text class="arch-main" x="380" y="378" text-anchor="middle">Knowledge Retriever · 确定性检索工具（非 Agent）</text>
+            <text class="arch-sub" x="380" y="398" text-anchor="middle">由 Agent 作为工具调用，不参与自主决策</text>
+
+            <text class="arch-sub" x="392" y="328" text-anchor="start">被 Agent 调用为工具</text>
+          </svg>
+        </div>
+        <figcaption class="arch-cap">四个专业 Agent 由 Orchestrator 编排，经 Message Bus 通信、Shared Memory 共享上下文；Knowledge Retriever 是确定性检索工具，不属于 Agent。</figcaption>
+      </figure>
+      <div class="proj-src"><a href="https://github.com/haoyunh415-create/AI-Interview-Agent">查看源码 ↗</a></div>
     </article>
   </section>
 
@@ -253,14 +402,14 @@
     </div>
     <div class="skills">
       <div class="skill-group"><span class="mono sk-label">语言</span><div class="sk-tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div></div>
-      <div class="skill-group"><span class="mono sk-label">后端</span><div class="sk-tags"><span class="tag">FastAPI</span><span class="tag">Django</span><span class="tag">RESTful API</span></div></div>
-      <div class="skill-group"><span class="mono sk-label">AI</span><div class="sk-tags"><span class="tag">RAG</span><span class="tag">Graph RAG</span><span class="tag">Agent Workflow</span><span class="tag">Multi-Agent</span></div></div>
-      <div class="skill-group"><span class="mono sk-label">存储</span><div class="sk-tags"><span class="tag">SQLite</span><span class="tag">Redis</span><span class="tag">Neo4j</span><span class="tag">Milvus</span></div></div>
-      <div class="skill-group"><span class="mono sk-label">工具</span><div class="sk-tags"><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Cursor</span><span class="tag">Claude Code</span><span class="tag">Codex</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">AI 应用</span><div class="sk-tags"><span class="tag">RAG</span><span class="tag">GraphRAG</span><span class="tag">Agent Workflow</span><span class="tag">Multi-Agent</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">后端</span><div class="sk-tags"><span class="tag">FastAPI</span><span class="tag">RESTful API</span><span class="tag">JWT</span><span class="tag">SSE</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">存储</span><div class="sk-tags"><span class="tag">SQLite</span><span class="tag">Redis</span><span class="tag">Neo4j</span><span class="tag">Milvus</span><span class="tag">Elasticsearch</span></div></div>
+      <div class="skill-group"><span class="mono sk-label">部署</span><div class="sk-tags"><span class="tag">Nginx</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Systemd</span></div></div>
     </div>
   </section>
 
-  <!-- ⑤ 简历 -->
+  <!-- ⑥ 简历 -->
   <section class="block" id="resume">
     <div class="block-head">
       <span class="mono no">05 — 简历</span>
@@ -276,7 +425,7 @@
     </div>
   </section>
 
-  <!-- ⑥ 联系 -->
+  <!-- ⑦ 联系 -->
   <section class="block" id="contact">
     <div class="block-head">
       <span class="mono no">06 — 联系</span>

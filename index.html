@@ -255,6 +255,28 @@
         </div>
         <figcaption class="arch-cap">查询并行走向量、BM25、图谱三路，结果经 RRF 融合去重、再经 Reranker 重排——用多路互补覆盖单路检索的召回盲区。</figcaption>
       </figure>
+
+      <div class="shots">
+        <div class="shots-head">运行界面</div>
+        <div class="shots-row">
+          <figure class="shot">
+            <img src="assets/shots/graphmind-1.jpg" alt="GraphMind 知识库文档管理" loading="lazy" width="300" height="148">
+            <figcaption>知识库文档管理</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/graphmind-2.jpg" alt="GraphMind 文档入库与解析" loading="lazy" width="300" height="152">
+            <figcaption>文档入库与解析</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/graphmind-3.jpg" alt="GraphMind 检索问答与引用" loading="lazy" width="300" height="149">
+            <figcaption>检索问答与引用</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/graphmind-4.jpg" alt="GraphMind 追踪链路" loading="lazy" width="300" height="137">
+            <figcaption>追踪链路</figcaption>
+          </figure>
+        </div>
+      </div>
       <div class="proj-src"><a href="https://github.com/haoyunh415-create/rag-GraphMind">查看源码 ↗</a></div>
     </article>
 
@@ -277,6 +299,10 @@
       <div class="proj-sec">
         <h4>关键实现</h4>
         <p>基于 SSE 流式交互；缓存 + 限流 + 监控提升实时体验与可观测性；JWT 鉴权 + SQLite 持久化。</p>
+      </div>
+      <div class="proj-sec">
+        <h4>实测</h4>
+        <p>以「RAG 架构」主题跑通一次完整面试：<strong>8 题全作答、0 跳过</strong>，四维评分 <strong>正确性 92 · 逻辑 95 · 深度 93 · 表达 90</strong>，总体评级 <strong>优秀</strong>。面试官沿单一主题递进追问，逐层深入到打分函数设计、动态权重与不确定性消解。</p>
       </div>
       <div class="proj-sec">
         <h4>工程判断 · Agent ≠ LLM 调用，工具 ≠ Agent</h4>
@@ -343,6 +369,28 @@
         </div>
         <figcaption class="arch-cap">四个专业 Agent 由 Orchestrator 编排，经 Message Bus 通信、Shared Memory 共享上下文；Knowledge Retriever 是确定性检索工具，不属于 Agent。</figcaption>
       </figure>
+
+      <div class="shots">
+        <div class="shots-head">运行界面</div>
+        <div class="shots-row">
+          <figure class="shot">
+            <img src="assets/shots/interview-1.jpg" alt="AI Interview Agent 面试对话" loading="lazy" width="300" height="149">
+            <figcaption>面试对话</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/interview-2.jpg" alt="AI Interview Agent 追问交互" loading="lazy" width="300" height="147">
+            <figcaption>追问交互</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/interview-3.jpg" alt="AI Interview Agent 四维评分" loading="lazy" width="300" height="147">
+            <figcaption>四维评分</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/shots/interview-4.jpg" alt="AI Interview Agent 学习报告" loading="lazy" width="300" height="139">
+            <figcaption>学习报告</figcaption>
+          </figure>
+        </div>
+      </div>
       <div class="proj-src"><a href="https://github.com/haoyunh415-create/AI-Interview-Agent">查看源码 ↗</a></div>
     </article>
   </section>

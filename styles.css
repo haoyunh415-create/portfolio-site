@@ -279,7 +279,7 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 5vw; }
 
 /* 技能 */
 .skills { display: flex; flex-direction: column; gap: 12px; }
-.skill-group { display: grid; grid-template-columns: 84px 1fr; align-items: baseline; gap: 16px; }
+.skill-group { display: grid; grid-template-columns: 124px 1fr; align-items: baseline; gap: 16px; }
 .sk-label { color: var(--ink-faint); font-family: var(--mono); font-size: 13px; letter-spacing: .14em; }
 .sk-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag { color: var(--ink-dim); border-bottom: 1px solid var(--line); padding: 2px 2px 4px; font-size: .9rem; }
